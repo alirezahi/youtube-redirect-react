@@ -6,7 +6,11 @@ class VideoItem extends Component{
     }
     render() {
         return(
-            <div>{this.props.video.id.videoId}</div>
+            <div className="col-md-4">
+                <img src={this.props.video.snippet.thumbnails.default.url} />
+                <iframe src={"https://www.youtube.com/embed/"+this.props.video.id.videoId}></iframe>
+                <button className="btn btn-danger">hello</button>
+            </div>
         );
     }
 }

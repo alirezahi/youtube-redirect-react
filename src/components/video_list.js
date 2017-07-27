@@ -7,9 +7,9 @@ class VideoList extends Component{
     }
     render() {
         return(
-            <ul>{this.props.videos.map((video) => {
-            return <VideoItem video={video} /> 
-        })}</ul>
+            <div>{this.props.videos.map((video) => {
+            return <VideoItem key={video.etag} video={video} /> 
+        })}</div>
         );
     }
 }
