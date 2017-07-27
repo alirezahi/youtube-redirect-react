@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import YTSearch from 'youtube-api-search';
 
 class SearchBar extends React.Component {
     constructor(props) {
